@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Unzip project
-        run: unzip -q TGExporter-Android-project.zip
+        run: unzip -q TGExporter-Android-project-1.zip
       - name: Fix typo
         run: sed -i 's/setAcceptThirdPartyCookie(/setAcceptThirdPartyCookies(/' TGExporter/app/src/main/java/com/tgexporter/app/MainActivity.kt
       - uses: actions/setup-java@v4
